@@ -9,7 +9,6 @@ export default function IdLayout({
   return (
     <html lang="id">
       <body className="bg-[#0b0f14] text-gray-100">
-        {/* HEADER */}
         <header className="sticky top-0 z-50 bg-[#0b0f14]/90 backdrop-blur border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <Link href="/id" className="font-bold text-lg">
@@ -18,7 +17,7 @@ export default function IdLayout({
 
             <nav className="flex items-center gap-6 text-sm">
               <Link href="/id/business" className="hover:text-green-400">
-                Bisnis
+                Business
               </Link>
               <Link href="/id/roadmap" className="hover:text-green-400">
                 Roadmap
@@ -36,10 +35,8 @@ export default function IdLayout({
           </div>
         </header>
 
-        {/* CONTENT */}
         <main>{children}</main>
 
-        {/* FOOTER */}
         <footer className="border-t border-gray-800 py-6 text-center text-xs text-gray-500">
           © 2025 SMILE AI GROUP · Autonomous by Design
         </footer>
