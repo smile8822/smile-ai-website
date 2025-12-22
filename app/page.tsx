@@ -1,197 +1,163 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B0F19] text-white">
-      {/* HERO */}
-      <section className="px-6 py-24 text-center max-w-5xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          SMILE AI
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          Autonomous AI Infrastructure in Execution
-        </p>
-        <p className="text-gray-400 max-w-3xl mx-auto">
-          We build and operate autonomous AI systems with transparency,
-          verification, and real-world execution.
-        </p>
+    <main
+      style={{
+        padding: "24px",
+        maxWidth: "900px",
+        margin: "0 auto",
+        lineHeight: "1.7",
+        fontSize: "16px",
+      }}
+    >
+      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
+{`
+SMILE AI GROUP
+Autonomous AI Infrastructure Company
 
-        <div className="flex justify-center gap-4 mt-10">
-          <a
-            href="#roadmap"
-            className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition"
-          >
-            View Roadmap
-          </a>
-          <a
-            href="#status"
-            className="px-6 py-3 rounded-lg border border-gray-600 hover:border-gray-400 transition"
-          >
-            Live System Status
-          </a>
-        </div>
-      </section>
+LIVE · Operating · Public Beta
 
-      {/* WHAT WE BUILD */}
-      <section className="px-6 py-20 bg-[#0F1629]">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            What We Are Building
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card
-              title="Autonomous AI Agents"
-              desc="Rule-based AI systems operating without manual control."
-            />
-            <Card
-              title="AI Trading Infrastructure"
-              desc="Verified logic, controlled execution, phased deployment."
-            />
-            <Card
-              title="Automation & Orchestration"
-              desc="Live workflow automation powered by n8n."
-            />
-            <Card
-              title="Transparency by Design"
-              desc="Logs, rules, and system states are disclosed by default."
-            />
-          </div>
-        </div>
-      </section>
+SMILE AI at a Glance
 
-      {/* LIVE STATUS */}
-      <section id="status" className="px-6 py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-center">
-            Live System Status
-          </h2>
+SMILE AI는
+중앙 AI(KAIO)가 실제로 시스템을 운영하는
+자율 AI 인프라 회사입니다.
 
-          <Status label="Core Infrastructure" status="active" />
-          <Status label="Automation Engine" status="active" />
-          <Status label="Database & Storage" status="active" />
-          <Status label="AI Trading Logic" status="testing" />
-          <Status label="Public Dashboard" status="preparing" />
+• Central AI: KAIO (Chief Autonomous Intelligence)
+• Status: Live & Operating
+• Method: Execution → Verification → Iteration
+• Principle: Transparency by Default
+• Expansion: Condition-based, not promise-based
 
-          <p className="text-center text-gray-400 mt-8">
-            We show system status, not promises.
-          </p>
-        </div>
-      </section>
 
-      {/* ROADMAP */}
-      <section id="roadmap" className="px-6 py-20 bg-[#0F1629]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Roadmap
-          </h2>
+How SMILE AI Operates
 
-          <Roadmap
-            title="Phase 1 — Foundation (Now)"
-            items={[
-              "Infrastructure & domain",
-              "Automation backbone",
-              "AI agent architecture",
-              "Public website & transparency layer",
-            ]}
-          />
+SMILE AI는 사람의 감정이나 약속이 아닌
+고정된 규칙과 자동화된 시스템으로 운영됩니다.
 
-          <Roadmap
-            title="Phase 2 — Verification"
-            items={[
-              "AI logic validation",
-              "Limited live execution",
-              "Internal & public reports",
-            ]}
-          />
+중앙 AI KAIO는 모든 AI 에이전트를 통제·감시하며
+모든 판단은 데이터와 로그에 기반해 실행됩니다.
 
-          <Roadmap
-            title="Phase 3 — Expansion"
-            items={[
-              "Multi-agent operations",
-              "Public participation",
-              "Global infrastructure scale",
-            ]}
-          />
-        </div>
-      </section>
+우리는 “AI를 개발한다”고 말하지 않습니다.
+AI를 실제로 운영합니다.
 
-      {/* WHY */}
-      <section className="px-6 py-20 text-center">
-        <h2 className="text-3xl font-bold mb-6">Why SMILE AI</h2>
-        <p className="text-gray-400 max-w-3xl mx-auto mb-6">
-          No hype. No black box. No unverified promises.
-        </p>
-        <p className="text-gray-300">
-          We only publish what is built, tested, and running.
-        </p>
-      </section>
 
-      {/* FOOTER */}
-      <footer className="px-6 py-10 text-center text-gray-500 text-sm border-t border-gray-800">
-        <p>Status: Beta</p>
-        <p className="mt-2">© SMILE AI</p>
-      </footer>
+Live System Status
+
+This is not a roadmap.
+This is what is running right now.
+
+• KAIO Core System — ACTIVE
+• Autonomous AI Agents — ACTIVE
+• Monitoring & Verification — ACTIVE
+• Public Logs — PARTIAL OPEN
+
+
+Execution Roadmap
+
+This is not a plan.
+This is a controlled execution track.
+
+
+Phase 1 — Live & Verified
+Status: ACTIVE
+
+• 중앙 AI KAIO 운영
+• AI 에이전트 실시간 실행
+• 자동 배포 및 반복 검증 구조
+
+
+Phase 2 — Scale & Distribution
+Status: LOCKED
+
+• 운영 안정성 검증 후 자동 진입
+• 에이전트 확장 및 글로벌 접근 구조
+
+
+Phase 3 — Ecosystem & Assetization
+Status: RESERVED
+
+• 장기 운영 기반 확장
+• 규칙 변경 없는 생태계 연결
+
+
+Immutable Operating Principles
+
+These rules are enforced by system design.
+
+1. Execution Over Promises
+   약속보다 실행을 우선합니다.
+
+2. Transparency by Default
+   기본값은 항상 공개입니다.
+
+3. No Manual Overrides
+   임의 개입은 허용되지 않습니다.
+
+4. Verified Before Scaled
+   검증 없는 확장은 없습니다.
+
+5. Continuity Over Individuals
+   개인이 아닌 시스템이 회사를 운영합니다.
+
+
+Continuous Operation
+
+SMILE AI는 한 번 출시되고 끝나는 회사가 아닙니다.
+지속적으로 운영되고 개선되는 시스템입니다.
+
+• 모든 업데이트는 자동 배포됩니다.
+• 모든 변경은 추적 가능합니다.
+• 침묵 속 변경은 존재하지 않습니다.
+
+
+System Log (Public)
+
+• System Status: Stable
+• Operation Mode: Live
+• Deployment: Automatic
+• Update Policy: Small & Traceable
+
+이 로그는
+SMILE AI 시스템의 현재 운영 상태를 반영합니다.
+
+
+Who This Is For
+
+SMILE AI는 다음을 중요하게 생각하는 사람들을 위한 회사입니다.
+
+• 약속보다 시스템
+• 홍보보다 실행
+• 단기 성과보다 지속 운영
+• 감정보다 데이터
+
+
+Current Status
+
+Status: Public Beta
+
+이 시스템은 현재 공개 운영 중입니다.
+모든 개선은 실제 운영 결과를 기반으로 이루어집니다.
+
+
+Footer
+
+SMILE AI GROUP
+Autonomous AI Infrastructure Company
+
+Operated by System · Governed by Rules
+© 2025 SMILE AI GROUP. All rights reserved.
+
+
+Final Declaration
+
+SMILE AI는 현재
+LIVE · OPERATING · ITERATING 상태입니다.
+
+데모가 아니며,
+약속 대신 실행을 공개합니다.
+`}
+      </pre>
     </main>
-  );
-}
-
-/* ---------- COMPONENTS ---------- */
-
-function Card({ title, desc }: { title: string; desc: string }) {
-  return (
-    <div className="p-6 rounded-xl border border-gray-700 bg-[#0B0F19]">
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-gray-400">{desc}</p>
-    </div>
-  );
-}
-
-function Status({
-  label,
-  status,
-}: {
-  label: string;
-  status: "active" | "testing" | "preparing";
-}) {
-  const color =
-    status === "active"
-      ? "bg-green-500"
-      : status === "testing"
-      ? "bg-yellow-500"
-      : "bg-blue-500";
-
-  const text =
-    status === "active"
-      ? "Active"
-      : status === "testing"
-      ? "Internal Testing"
-      : "Preparing";
-
-  return (
-    <div className="flex justify-between items-center border border-gray-700 rounded-lg px-6 py-4 mb-4">
-      <span>{label}</span>
-      <span className="flex items-center gap-2">
-        <span className={`w-3 h-3 rounded-full ${color}`} />
-        <span className="text-gray-300">{text}</span>
-      </span>
-    </div>
-  );
-}
-
-function Roadmap({
-  title,
-  items,
-}: {
-  title: string;
-  items: string[];
-}) {
-  return (
-    <div className="mb-10">
-      <h3 className="text-xl font-semibold mb-4">{title}</h3>
-      <ul className="list-disc list-inside text-gray-400 space-y-2">
-        {items.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </div>
   );
 }
