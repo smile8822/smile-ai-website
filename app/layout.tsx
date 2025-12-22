@@ -8,30 +8,36 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#0e1117] text-gray-200">
+      <body className="bg-[#0b0f14] text-gray-100">
         {/* HEADER */}
-        <header className="fixed top-0 left-0 w-full bg-[#0e1117]/90 backdrop-blur border-b border-gray-800 z-50">
-          <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-            <span className="font-bold tracking-wide">
+        <header className="sticky top-0 z-50 bg-[#0b0f14]/90 backdrop-blur border-b border-gray-800">
+          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <Link href="/" className="font-bold text-lg">
               SMILE AI GROUP
-            </span>
+            </Link>
 
             <nav className="flex items-center gap-6 text-sm">
-              <Link href="/en/business">Business</Link>
-              <Link href="/en/roadmap">Roadmap</Link>
-              <Link href="/en/status">Status</Link>
+              <Link href="/business" className="hover:text-green-400">
+                Business
+              </Link>
+              <Link href="/roadmap" className="hover:text-green-400">
+                Roadmap
+              </Link>
+              <Link href="/status" className="hover:text-green-400">
+                Status
+              </Link>
 
-              <div className="flex gap-3 ml-6">
-                <a href="/en">EN</a>
-                <a href="/ko">KR</a>
-                <a href="/id">ID</a>
+              <div className="ml-4 flex gap-2 text-xs text-gray-400">
+                <span className="cursor-pointer hover:text-white">EN</span>
+                <span className="cursor-pointer hover:text-white">KR</span>
+                <span className="cursor-pointer hover:text-white">ID</span>
               </div>
             </nav>
           </div>
         </header>
 
-        {/* CONTENT */}
-        <div className="pt-24">{children}</div>
+        {/* PAGE */}
+        <main>{children}</main>
       </body>
     </html>
   );
