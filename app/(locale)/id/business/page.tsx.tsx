@@ -1,33 +1,30 @@
-export default function BusinessID() {
+export default function Business() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-3xl font-bold mb-8">Bisnis Inti</h1>
+    <section className="space-y-8">
+      <h1 className="text-3xl font-bold">Core Businesses</h1>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        <div className="p-6 border border-gray-800 rounded">
-          <p className="text-green-400 text-sm mb-2">LIVE</p>
-          <h2 className="font-semibold mb-2">Agen AI Otonom</h2>
-          <p className="text-gray-400 text-sm">
-            Agen AI yang beroperasi, memverifikasi, dan beriterasi secara otonom
-            di bawah kontrol Central AI KAIO.
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="border border-gray-800 p-6 rounded">
+          <span className="text-green-400 text-xs">LIVE</span>
+          <h3 className="mt-2 font-semibold">Autonomous AI Agents</h3>
+          <p className="text-sm text-gray-400">
+            Agents that operate, verify, and iterate autonomously under Central AI KAIO.
           </p>
         </div>
 
-        <div className="p-6 border border-gray-800 rounded">
-          <p className="text-green-400 text-sm mb-2">ACTIVE</p>
-          <h2 className="font-semibold mb-2">Infrastruktur Trading AI</h2>
-          <p className="text-gray-400 text-sm">
-            Infrastruktur trading berbasis eksekusi dengan kontrol risiko
-            real-time dan log transparan.
+        <div className="border border-gray-800 p-6 rounded">
+          <span className="text-green-400 text-xs">ACTIVE</span>
+          <h3 className="mt-2 font-semibold">AI Trading Infrastructure</h3>
+          <p className="text-sm text-gray-400">
+            Execution-based trading with real-time risk control and transparent logs.
           </p>
         </div>
 
-        <div className="p-6 border border-gray-800 rounded">
-          <p className="text-yellow-400 text-sm mb-2">IN PROGRESS</p>
-          <h2 className="font-semibold mb-2">Sistem Operasi AI</h2>
-          <p className="text-gray-400 text-sm">
-            Infrastruktur untuk menerapkan, memantau, dan menskalakan entitas AI
-            otonom secara global.
+        <div className="border border-gray-800 p-6 rounded">
+          <span className="text-yellow-400 text-xs">IN PROGRESS</span>
+          <h3 className="mt-2 font-semibold">AI Operating Systems</h3>
+          <p className="text-sm text-gray-400">
+            Infrastructure to deploy, monitor, and scale autonomous AI globally.
           </p>
         </div>
       </div>
