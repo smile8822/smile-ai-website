@@ -1,0 +1,1 @@
+export default function WhyNotCollapse(){return(<section className="py-24 px-6 bg-bg text-center"><h3 className="text-sm tracking-widest text-gray-400 mb-4">WHY THIS DOES NOT COLLAPSE</h3></section>);}

@@ -1,0 +1,1 @@
+export default function HowMoneyIsMade(){return(<section className="py-24 px-6 bg-[#0E1220] text-center"><h3 className="text-sm tracking-widest text-gray-400 mb-4">HOW MONEY IS MADE</h3></section>);}

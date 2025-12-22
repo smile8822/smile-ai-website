@@ -1,0 +1,1 @@
+export default function WhyScaleSafely(){return(<section className="py-24 px-6 bg-bg text-center"><h3 className="text-sm tracking-widest text-gray-400 mb-4">WHY THIS CAN SCALE SAFELY</h3></section>);}

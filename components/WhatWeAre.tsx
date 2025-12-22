@@ -1,0 +1,1 @@
+export default function WhatWeAre(){return(<section className="py-24 px-6 bg-bg text-center"><h3 className="text-sm tracking-widest text-gray-400 mb-4">WHAT WE ARE</h3><h2 className="text-3xl font-semibold mb-12">A Company Operated by AI</h2></section>);}
