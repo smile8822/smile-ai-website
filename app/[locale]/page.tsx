@@ -1,5 +1,9 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return (
+  redirect("/en");
+}
+
     <main className="min-h-screen bg-gradient-to-b from-[#0b0f14] to-[#111827] text-white px-6 py-20">
       {/* HERO */}
       <section className="max-w-6xl mx-auto text-center mb-24">
