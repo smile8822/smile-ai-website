@@ -1,14 +1,7 @@
-export default function KrPage() {
-  return (
-    <main style={{ padding: 40 }}>
-      <h1>스마일 AI 그룹</h1>
-      <p>스마일 AI 그룹 공식 홈페이지</p>
-
-      <ul>
-        <li><a href="/kr/business">사업</a></li>
-        <li><a href="/kr/roadmap">로드맵</a></li>
-        <li><a href="/kr/status">상태</a></li>
-      </ul>
-    </main>
-  );
-}
+<header>
+  <h1>SMILE AI GROUP</h1>
+  <p>AI 기반 투명한 동반성장 플랫폼</p>
+  <p style={{ opacity: 0.8 }}>
+    현재 실전 운영이 시작되었으며, 플랫폼은 단계적으로 공개됩니다.
+  </p>
+</header>

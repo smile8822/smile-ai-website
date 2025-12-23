@@ -1,14 +1,7 @@
-export default function IdPage() {
-  return (
-    <main style={{ padding: 40 }}>
-      <h1>Smile AI Group</h1>
-      <p>Selamat datang di Smile AI Group</p>
-
-      <ul>
-        <li><a href="/id/business">Bisnis</a></li>
-        <li><a href="/id/roadmap">Roadmap</a></li>
-        <li><a href="/id/status">Status</a></li>
-      </ul>
-    </main>
-  );
-}
+<header>
+  <h1>SMILE AI GROUP</h1>
+  <p>Platform pertumbuhan bersama berbasis AI yang transparan</p>
+  <p style={{ opacity: 0.8 }}>
+    Operasional telah dimulai. Platform dirilis secara bertahap.
+  </p>
+</header>
