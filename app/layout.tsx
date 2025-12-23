@@ -1,4 +1,7 @@
-import "./globals.css";
+export const metadata = {
+  title: "SMILE AI GROUP",
+  description: "AI-driven co-growth platform",
+};
 
 export default function RootLayout({
   children,
@@ -7,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ margin: 0 }}>{children}</body>
     </html>
   );
 }
