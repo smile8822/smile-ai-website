@@ -1,39 +1,34 @@
-export default function KrStatusPage() {
+export default function Page() {
   return (
     <main style={{ maxWidth: 960, margin: "0 auto", padding: "48px 24px" }}>
-      <h1 style={{ fontSize: 36, fontWeight: 700, marginBottom: 24 }}>
-        시스템 상태
-      </h1>
-
-      <section style={{ marginBottom: 32 }}>
-        <h2 style={{ fontSize: 22, fontWeight: 600 }}>운영 개요</h2>
-        <p style={{ lineHeight: 1.8, marginTop: 8 }}>
-          SMILE AI GROUP의 시스템은 현재 안정적으로 운영되고 있습니다.
-          핵심 서비스는 AI 보조 모니터링을 통해 지속적으로 점검됩니다.
+      <header style={{ marginBottom: 40 }}>
+        <h1 style={{ fontSize: 36, fontWeight: 700 }}>운영 현황</h1>
+        <p style={{ fontSize: 18, color: "#555", marginTop: 8 }}>
+          SMILE AI GROUP 실시간 운영 상태 요약
         </p>
-      </section>
+      </header>
 
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 22, fontWeight: 600 }}>현재 상태</h2>
-        <ul style={{ lineHeight: 2, marginTop: 8 }}>
-          <li>홈페이지 및 다국어 라우팅: <strong>정상</strong></li>
-          <li>CORE 규칙 및 총량 고정: <strong>적용 중</strong></li>
-          <li>5:5 분배 원칙: <strong>적용 중</strong></li>
-          <li>내부 모니터링 및 로그: <strong>운영 중</strong></li>
+        <ul style={{ marginTop: 12, lineHeight: 1.8 }}>
+          <li>✅ 회사 구조: 공개·고정 운영</li>
+          <li>✅ AI 운영 총괄: KAIO (상시 가동)</li>
+          <li>✅ CORE 지분 구조: 확정·불변</li>
+          <li>✅ 자동화 트레이딩: 실전 검증 단계</li>
         </ul>
       </section>
 
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 22, fontWeight: 600 }}>투명성 원칙</h2>
         <p style={{ lineHeight: 1.8 }}>
-          모든 운영 변경은 사전에 정의된 규칙에 따라 진행됩니다.
-          임의 수정은 허용되지 않으며, 검증 후 단계적으로 공개됩니다.
+          모든 운영, 수익, 배당, 검증 데이터는 공개 로그와
+          온체인 기록을 통해 누구나 확인할 수 있도록 유지됩니다.
         </p>
       </section>
 
       <footer style={{ marginTop: 48, borderTop: "1px solid #eee", paddingTop: 24 }}>
         <p style={{ fontSize: 14, color: "#777" }}>
-          © SMILE AI GROUP. All rights reserved.
+          SMILE AI GROUP · Live Status Page
         </p>
       </footer>
     </main>
