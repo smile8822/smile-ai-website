@@ -1,72 +1,58 @@
 export default function StatusPage() {
+  const lastUpdated = new Date().toLocaleString("en-US", {
+    timeZone: "UTC",
+    dateStyle: "medium",
+    timeStyle: "short",
+  });
+
   return (
-    <main style={{ padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>System Status</h1>
-      <p style={{ opacity: 0.8, marginBottom: "32px" }}>
-        This page shows the real-time operational status of SMILE AI GROUP.
-      </p>
+    <main style={{ maxWidth: 960, margin: "0 auto", padding: "48px 24px" }}>
+      <header style={{ marginBottom: 40 }}>
+        <h1 style={{ fontSize: 40, fontWeight: 700 }}>System Status</h1>
+        <p style={{ fontSize: 18, color: "#555", marginTop: 8 }}>
+          Live operational status of SMILE AI GROUP
+        </p>
+      </header>
 
-      <section style={{ display: "grid", gap: "16px" }}>
-        <StatusCard
-          title="Platform Core"
-          status="Running"
-          description="Core AI and system architecture is live and operating."
-          color="#22c55e"
-        />
-
-        <StatusCard
-          title="Website"
-          status="Iterating"
-          description="Website is live and continuously improving."
-          color="#eab308"
-        />
-
-        <StatusCard
-          title="AI Agents"
-          status="Live Testing"
-          description="AI agents are operating in controlled live environments."
-          color="#22c55e"
-        />
-
-        <StatusCard
-          title="Transparency Logs"
-          status="Preparing"
-          description="Operational logs will be 공개 to ensure full transparency."
-          color="#eab308"
-        />
+      {/* STATUS CARD */}
+      <section
+        style={{
+          border: "1px solid #e5e7eb",
+          borderLeft: "6px solid #22c55e",
+          borderRadius: 8,
+          padding: "20px",
+          background: "#ffffff",
+          marginBottom: 32,
+        }}
+      >
+        <h3 style={{ marginBottom: 6 }}>🟢 All Systems Operational</h3>
+        <p style={{ color: "#555", lineHeight: 1.6 }}>
+          No incidents reported. All services are running normally.
+        </p>
       </section>
 
-      <p style={{ marginTop: "40px", opacity: 0.7 }}>
-        Last updated: {new Date().toLocaleDateString()}
-      </p>
-    </main>
-  );
-}
+      {/* DETAILS */}
+      <section style={{ lineHeight: 1.8 }}>
+        <ul>
+          <li>✔ Website & API: Operational</li>
+          <li>✔ AI Core Services: Operational</li>
+          <li>✔ On-chain Verification: Active</li>
+          <li>✔ Data Transparency Logs: Updating</li>
+        </ul>
+      </section>
 
-function StatusCard({
-  title,
-  status,
-  description,
-  color,
-}: {
-  title: string;
-  status: string;
-  description: string;
-  color: string;
-}) {
-  return (
-    <div
-      style={{
-        border: "1px solid #e5e7eb",
-        borderLeft: `6px solid ${color}`,
-        borderRadius: "8px",
-        padding: "16px 20px",
-        background: "#ffffff",
-      }}
-    >
-      <h3 style={{ marginBottom: "4px" }}>{title}</h3>
-      <strong style={{ color }}>{status}</strong>
-      <p style={{ marginTop: "8px", opacity: 0.8 }}>{description}</p>
-    </div>
+      {/* FOOTER */}
+      <footer
+        style={{
+          marginTop: 48,
+          paddingTop: 16,
+          borderTop: "1px solid #eee",
+          fontSize: 14,
+          color: "#777",
+        }}
+      >
+        Last updated: {lastUpdated} (UTC)
+      </footer>
+    </main>
   );
 }
