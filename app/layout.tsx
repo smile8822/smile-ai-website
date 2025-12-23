@@ -1,3 +1,6 @@
+import "./globals.css";
+import type { ReactNode } from "react";
+
 export const metadata = {
   title: "SMILE AI GROUP",
   description: "AI-driven co-growth platform",
@@ -6,7 +9,7 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
