@@ -1,33 +1,42 @@
-export default function Status() {
+export default function IdStatusPage() {
   return (
-    <section className="space-y-10">
-      <h1 className="text-3xl font-bold">Live System Status</h1>
+    <main style={{ maxWidth: 960, margin: "0 auto", padding: "48px 24px" }}>
+      <h1 style={{ fontSize: 36, fontWeight: 700, marginBottom: 24 }}>
+        Status Sistem
+      </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="border border-gray-800 p-6 rounded">
-          <h3 className="font-semibold">Central AI</h3>
-          <p className="text-green-400">KAIO — Operating</p>
-        </div>
+      <section style={{ marginBottom: 32 }}>
+        <h2 style={{ fontSize: 22, fontWeight: 600 }}>Ringkasan Operasi</h2>
+        <p style={{ lineHeight: 1.8, marginTop: 8 }}>
+          Sistem SMILE AI GROUP saat ini beroperasi secara stabil.
+          Layanan inti dipantau secara berkelanjutan dengan bantuan AI.
+        </p>
+      </section>
 
-        <div className="border border-gray-800 p-6 rounded">
-          <h3 className="font-semibold">Autonomous Agents</h3>
-          <p className="text-green-400">Live Execution</p>
-        </div>
-
-        <div className="border border-gray-800 p-6 rounded">
-          <h3 className="font-semibold">Trading Infrastructure</h3>
-          <p className="text-green-400">Risk-Controlled</p>
-        </div>
-      </div>
-
-      <div className="border border-gray-800 p-6 rounded">
-        <h3 className="font-semibold mb-3">Public Logs</h3>
-        <ul className="text-sm text-gray-400 space-y-1">
-          <li>[SYSTEM] KAIO verification cycle completed — OK</li>
-          <li>[AGENT] Autonomous execution loop validated</li>
-          <li>[RISK] No anomaly detected</li>
+      <section style={{ marginBottom: 32 }}>
+        <h2 style={{ fontSize: 22, fontWeight: 600 }}>Status Saat Ini</h2>
+        <ul style={{ lineHeight: 2, marginTop: 8 }}>
+          <li>Situs web & rute multi-bahasa: <strong>Aktif</strong></li>
+          <li>Aturan & pasokan CORE: <strong>Aktif</strong></li>
+          <li>Prinsip distribusi 5:5: <strong>Aktif</strong></li>
+          <li>Pemantauan & pencatatan internal: <strong>Berjalan</strong></li>
         </ul>
-      </div>
-    </section>
+      </section>
+
+      <section style={{ marginBottom: 32 }}>
+        <h2 style={{ fontSize: 22, fontWeight: 600 }}>Transparansi</h2>
+        <p style={{ lineHeight: 1.8 }}>
+          Semua perubahan operasional mengikuti aturan yang telah ditetapkan.
+          Tidak ada perubahan sepihak. Pembaruan dilakukan setelah proses
+          verifikasi.
+        </p>
+      </section>
+
+      <footer style={{ marginTop: 48, borderTop: "1px solid #eee", paddingTop: 24 }}>
+        <p style={{ fontSize: 14, color: "#777" }}>
+          © SMILE AI GROUP. All rights reserved.
+        </p>
+      </footer>
+    </main>
   );
 }
