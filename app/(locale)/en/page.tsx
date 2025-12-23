@@ -92,16 +92,15 @@ export default function HomeEN() {
               Live operations started · Step-by-step public release
             </div>
 
-            <h1 style={{ fontSize: 44, lineHeight: 1.1, margin: "8px 0 12px" }}>
-              A transparent platform where AI works,
-              <span style={{ color: "#93c5fd" }}> and growth is shared.</span>
-            </h1>
+           <h1 style={{ fontSize: 44, fontWeight: 800 }}>
+  SMILE AI GROUP
+</h1>
 
-            <p style={{ fontSize: 16, lineHeight: 1.6, opacity: 0.85 }}>
-              SMILE AI GROUP is building an AI-driven ecosystem designed for
-              transparency, automation, and long-term co-growth. We publish
-              progress as operations evolve.
-            </p>
+<p style={{ fontSize: 20, color: "#555", marginTop: 12, maxWidth: 720 }}>
+  An AI-driven global co-growth infrastructure.<br />
+  Transparent. Verifiable. Always Live.
+</p>
+
 
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 18 }}>
               <a href="/en/roadmap" style={primaryBtnStyle}>
