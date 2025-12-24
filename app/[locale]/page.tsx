@@ -1,14 +1,18 @@
-export default function LocalePage({
+import HeroSection from "../components/HeroSection";
+import KaioSummary from "../components/KaioSummary";
+import { getMessages } from "../lib/getMessages";
+
+export default async function LocalePage({
   params,
 }: {
   params: { locale: string };
 }) {
-  const isKr = params.locale === "kr";
+  const messages = await getMessages(params.locale);
 
   return (
-    <main style={{ padding: "40px" }}>
-      <h1>SMILE AI GROUP</h1>
-      <p>{isKr ? "한국어 페이지" : "English Page"}</p>
+    <main>
+      <HeroSection messages={messages.hero} />
+      <KaioSummary messages={messages.kaio} />
     </main>
   );
 }

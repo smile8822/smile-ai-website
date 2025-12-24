@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "badge": "SMILE AI GROUP · Launch Ready",
+    "titleLine1": "AI runs automatically,",
+    "titleLine2": "Humans focus on value",
+    "desc1": "An AI operating system based on transparency, automation, and verification.",
+    "desc2": "Connecting a fully transparent reward ecosystem into one flow.",
+    "desc3": "All operational decisions are managed by the master AI KAIO."
+  },
+  "kaio": {
+    "title": "KAIO manages structure, not people",
+    "desc1": "KAIO is not driven by emotion or promises.",
+    "desc2": "It operates strictly on on-chain data, logs, and metrics.",
+    "desc3": "All results are public, verifiable, and repeatable."
+  }
+}
