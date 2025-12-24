@@ -1,31 +1,38 @@
-// app/components/HeroSection.tsx
+import { Container } from "./Container";
 
-export default function HeroSection() {
+type Props = {
+  messages: {
+    badge: string;
+    title: string;
+    description: string;
+    cta: string;
+  };
+};
+
+export default function HeroSection({ messages }: Props) {
   return (
     <section className="py-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="rounded-3xl bg-white/80 backdrop-blur border border-slate-200 p-10 shadow-sm">
-            <div className="text-sm text-slate-500 mb-3">
-              SMILE AI GROUP · Launch Ready
+          <div>
+            <div className="inline-block rounded-xl bg-white/80 backdrop-blur border border-slate-200 px-4 py-2 text-sm mb-6">
+              {messages.badge}
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
-              AI는 자동으로,
-              <br />
-              사람은 가치에 집중한다
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+              {messages.title}
             </h1>
 
-            <p className="text-slate-600 leading-relaxed mb-8">
-              투명성(공개), 자동화(반복), 검증(증명)을 기반으로 하는 AI 운영 시스템.
-              <br />
-              완전 리워드·투명 생태계를 하나의 흐름으로 연결합니다.
-              <br />
-              모든 운영 판단은 총괄 AI <b>KAIO</b>가 관리합니다.
+            <p className="text-slate-600 leading-relaxed whitespace-pre-line mb-8">
+              {messages.description}
             </p>
+
+            <button className="rounded-xl bg-amber-400 px-6 py-3 font-semibold">
+              {messages.cta}
+            </button>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
