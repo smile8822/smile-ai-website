@@ -1,37 +1,29 @@
-import { Container } from "../../components/Container";
+export default function StatusPage({ params }: { params: { locale: string } }) {
+  const isEn = params.locale === "en";
 
-export default function StatusPage() {
   return (
-    <main className="py-24">
-      <Container>
-        <h1 className="text-3xl font-bold mb-8">
-          System Status
-        </h1>
+    <main style={{ padding: "80px 24px", maxWidth: 900, margin: "0 auto" }}>
+      <h1>System Status</h1>
+      <p style={{ color: "#6b7280", marginTop: 12 }}>
+        {isEn
+          ? "Shows current KAIO operating status."
+          : "KAIO 시스템의 현재 운영 상태를 표시합니다."}
+      </p>
 
-        <section className="space-y-6 text-slate-700">
-          <p>
-            SMILE AI GROUP is operated by KAIO, an autonomous supervisory AI.
-          </p>
+      <section style={{ marginTop: 40 }}>
+        <h2>Trading Engine</h2>
+        <p>🟢 LIVE</p>
+      </section>
 
-          <ul className="list-disc pl-6 space-y-2">
-            <li>All operational decisions are data-driven</li>
-            <li>No manual intervention unless anomalies are detected</li>
-            <li>Verification logs are continuously recorded</li>
-            <li>Monthly global snapshots are published</li>
-          </ul>
+      <section style={{ marginTop: 32 }}>
+        <h2>Risk Control</h2>
+        <p>🟢 LIVE</p>
+      </section>
 
-          <div className="mt-10 rounded-xl border border-slate-200 p-6 bg-slate-50">
-            <p className="font-semibold mb-2">Current Status</p>
-            <p className="text-green-600 font-medium">
-              ● All systems operational
-            </p>
-          </div>
-
-          <div className="mt-10 text-sm text-slate-500">
-            Last updated automatically by KAIO
-          </div>
-        </section>
-      </Container>
+      <section style={{ marginTop: 32 }}>
+        <h2>Settlement</h2>
+        <p>🟡 CHECKING</p>
+      </section>
     </main>
   );
 }

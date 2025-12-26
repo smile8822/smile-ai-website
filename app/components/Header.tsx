@@ -1,30 +1,35 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const pathname = usePathname();
+  const pathname = usePathname(); // 예: /ko/business/kaio-trading
+  const isEn = pathname.startsWith("/en");
+  const currentLocale = isEn ? "en" : "ko";
+  const otherLocale = isEn ? "ko" : "en";
 
-  const isKR = pathname.startsWith("/kr");
-  const targetLocale = isKR ? "en" : "kr";
-
-  const nextPath = pathname.replace(/^\/(kr|en)/, `/${targetLocale}`);
+  const switchHref = pathname.replace(`/${currentLocale}`, `/${otherLocale}`);
 
   return (
-    <header className="w-full py-4 border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <div className="font-semibold text-sm">
-          SMILE AI GROUP
-        </div>
+    <header style={{ padding: "16px 24px", borderBottom: "1px solid #e5e7eb" }}>
+      <nav
+        style={{
+          maxWidth: 1100,
+          margin: "0 auto",
+          display: "flex",
+          gap: 24,
+          fontWeight: 800,
+          alignItems: "center",
+        }}
+      >
+        <a href={`/${currentLocale}`}>Home</a>
+        <a href={`/${currentLocale}/roadmap`}>Roadmap</a>
+        <a href={`/${currentLocale}/status`}>Status</a>
 
-        <Link
-          href={nextPath}
-          className="text-sm text-slate-600 hover:text-slate-900"
-        >
-          {isKR ? "EN" : "KR"}
-        </Link>
-      </div>
+        <a href={switchHref} style={{ marginLeft: "auto" }}>
+          {currentLocale === "ko" ? "EN" : "KO"}
+        </a>
+      </nav>
     </header>
   );
 }
