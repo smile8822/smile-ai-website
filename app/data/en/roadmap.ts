@@ -1,14 +1,18 @@
-import type { RoadmapItem } from "@/data/roadmap";
+import type { RoadmapItem } from "../ko/roadmap";
 
-export const roadmap: RoadmapItem[] = [
+const roadmap: RoadmapItem[] = [
   {
-    slug: "kaio-trading",
-    title: "KAIO Roadmap",
-    steps: ["Stabilize ops", "Improve risk control", "Scale rails/accounts", "Go global"],
+    slug: "foundation",
+    title: "Foundation",
+    description: "Initial system and architecture setup",
+    items: ["Architecture", "Core logic", "Infrastructure"],
   },
   {
-    slug: "membership",
-    title: "Membership Roadmap",
-    steps: ["Define tiers", "Lock benefits policy", "Refine settlement/dividend rails"],
+    slug: "expansion",
+    title: "Expansion",
+    description: "Feature expansion and automation",
+    items: ["AI Agents", "Automation", "Scaling"],
   },
 ];
+
+export default roadmap;

@@ -25,9 +25,10 @@ export default function BusinessDetailPage({ params }: Props) {
 
       <h2 style={{ marginTop: 40 }}>Technology</h2>
       <ul>
-        {card.tech.map((t, i) => (
-          <li key={i}>{t}</li>
-        ))}
+        {card.tech?.map((t: string, i: number) => (
+  <li key={i}>{t}</li>
+))}
+
       </ul>
 
       <h2 style={{ marginTop: 40 }}>Status</h2>

@@ -1,29 +1,28 @@
-import { businessCards } from "@/data/ko/businessCards";
-import BusinessCard from "@/components/BusinessCard";
+import koRoadmap from "@/data/ko/roadmap";
+import type { RoadmapItem } from "@/data/ko/roadmap";
 
-export default function KoHomePage() {
+export default function RoadmapPage() {
+  const roadmap: RoadmapItem[] = koRoadmap;
+
   return (
-    <main style={{ padding: "80px 24px", maxWidth: 1100, margin: "0 auto" }}>
-      <h1>Business</h1>
+    <main style={{ padding: "80px 24px", maxWidth: 900, margin: "0 auto" }}>
+      <h1>Roadmap</h1>
 
-      <section
-        style={{
-          marginTop: 40,
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: 24,
-        }}
-      >
-        {businessCards.map((card) => (
-          <BusinessCard
-            key={card.slug}
-            title={card.title}
-            desc={card.desc}
-            status={card.status}
-            href={`/ko/business/${card.slug}`}
-          />
-        ))}
-      </section>
+      {roadmap.map((item) => (
+        <section key={item.slug} style={{ marginTop: 40 }}>
+          <h2>{item.title}</h2>
+
+          {item.description && <p>{item.description}</p>}
+
+          {item.items && (
+            <ul>
+              {item.items.map((text, i) => (
+                <li key={i}>{text}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))}
     </main>
   );
 }
