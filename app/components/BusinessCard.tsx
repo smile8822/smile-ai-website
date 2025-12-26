@@ -20,10 +20,11 @@ export default function BusinessCard({
         padding: 16,
         textDecoration: "none",
         color: "inherit",
+        display: "block",
       }}
     >
       <h3>{title}</h3>
-      <p style={{ color: "#6b7280", marginTop: 8 }}>{desc}</p>
+      <p style={{ marginTop: 8, color: "#6b7280" }}>{desc}</p>
       <p style={{ marginTop: 12, fontWeight: 600 }}>{status}</p>
     </a>
   );

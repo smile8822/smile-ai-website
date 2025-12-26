@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { businessCards as koCards } from "@/data/ko/businessCards";
 import { businessCards as enCards } from "@/data/en/businessCards";
-import type { BusinessCard } from "@/data/ko/businessCards";
+import type { BusinessCardData } from "@/data/en/businessCards";
 
 type Props = {
   params: {
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function BusinessDetailPage({ params }: Props) {
-  const cards: BusinessCard[] =
+  const cards: BusinessCards[] =
     params.locale === "en" ? enCards : koCards;
 
   const card = cards.find((c) => c.slug === params.slug);

@@ -1,21 +1,21 @@
-export type BusinessCard = {
+export type BusinessCardData = {
   slug: string;
   title: string;
   desc: string;
-  status: "LIVE" | "OPEN" | "PLANNED";
-  overview: string;
-  tech: string[];
-  detailStatus: string;
+  status: string;
+  overview?: string;
+  tech?: string[];
+  detailStatus?: string;
 };
 
-export const businessCards: BusinessCard[] = [
+export const businessCards: BusinessCardData[] = [
   {
     slug: "membership",
     title: "Membership",
-    desc: "CORE 보유 기반 멤버십 구조",
+    desc: "CORE 기반 멤버십 구조",
     status: "OPEN",
-    overview: "CORE 보유량에 따라 멤버십 등급과 혜택이 결정됩니다.",
-    tech: ["XRP Ledger", "On-chain Proof"],
-    detailStatus: "OPEN",
+    overview: "CORE를 기반으로 한 멤버십 시스템",
+    tech: ["XRP Ledger", "Smart Distribution"],
+    detailStatus: "LIVE",
   },
 ];
